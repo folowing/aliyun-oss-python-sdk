@@ -38,7 +38,8 @@ class Session(object):
                                                  data=req.data,
                                                  params=req.params,
                                                  headers=req.headers,
-                                                 stream=True,
+                                                 #stream=True,
+                                                 stream=False,
                                                  timeout=timeout))
         except requests.RequestException as e:
             raise RequestError(e)
